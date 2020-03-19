@@ -3,4 +3,4 @@ if ( $_POST['payload'] ) {
   shell_exec( 'cd /var/www/ldap/ldap/ && git reset --hard HEAD && git pull' );
 }
 
-?>hi
+?>hello motherfuckin world bitches
