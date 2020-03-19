@@ -1,6 +1,6 @@
 <?php
-if ( $_POST['payload'] ) {
-    echo shell_exec("cd /var/www/git-repo && /full/path/to/bin/git pull 2>&1");
+if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push')  {
+    shell_exec("cd /var/www/git-repo && /full/path/to/bin/git pull");
 
 }
 
