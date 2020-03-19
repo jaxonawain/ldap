@@ -1,0 +1,6 @@
+END GOAL:
+1. Have a decent looking web page that is used to log, using LDAP authentication
+2. Use zend framework
+3. Use Windows 2012 Active directory
+4. Secure best practices
+5. Create secure password-reset page
