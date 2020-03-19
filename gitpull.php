@@ -1,7 +1,6 @@
 <?php
-if ( $_POST['payload'] ) {
-  echo shell_exec("cd /var/www/ldap/ldap && git pull 2>&1");
-
+if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
+  shell_exec( 'cd /srv/www/git-repo/ && git reset --hard HEAD && git pull' );
 }
 
-?>hello motherfuckin world bitches try 5
+?>hi
