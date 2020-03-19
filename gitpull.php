@@ -1,7 +1,7 @@
 <?php
-if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push')  {
-    shell_exec("cd /var/www/git-repo && /full/path/to/bin/git pull");
+if ( $_POST['payload'] ) {
+  echo shell_exec("cd /var/www/git-repo && /full/path/to/bin/git pull 2>&1");
 
 }
 
-?>hello motherfuckin world bitches try 5
+?>hello motherfuckin world bitches try 4
